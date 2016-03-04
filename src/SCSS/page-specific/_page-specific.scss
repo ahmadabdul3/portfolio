@@ -1,0 +1,103 @@
+
+h3 + h3 {
+	border-color: $light-blue;
+}
+
+
+header {
+	text-align: center;
+	height: 100%;
+	position: relative;
+	color: white;
+	overflow: hidden;
+}
+header .background-box {
+	background-image: url(http://finedininglovers.cdn.crosscast-system.com/BlogPost/l_4370_StockFood-00365789cut.jpg);
+	background-image: url(http://static.tumblr.com/7989b902561180660eca72b13d713918/eryqjlb/MrPnulca2/tumblr_static_6dim7azpf8w884wsocwk4wcwk.jpg);
+}
+header h1 {
+	font-size: 60px;
+}
+header .centered-box {
+	position: relative;
+	padding: 50px 0 30px 0;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+	margin-right: -8px;
+}
+header .centered-box .background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: -5;
+	opacity: 0.6;
+}
+nav.fixed-top {
+	/*
+	background-color: #2F3742;
+	*/
+}
+#about-me {
+	
+}
+
+#my-work {
+	overflow: hidden;
+	position: relative;
+	/*
+	color: white;
+	*/
+}
+#my-work #design-ideas {
+	
+	.info-box {
+		background-color: #eee;
+
+		header {
+			border-color: #FF7300;
+
+		}
+	}
+	.animated-link {
+		color: $lighter-blue;
+	}
+	.animated-link:hover {
+		color: $light-blue;
+	}
+}
+
+
+
+#my-work .background-box {
+	width: 105%;
+	left: -5px;
+	opacity: 0.7;
+	background-image: url(http://finedininglovers.cdn.crosscast-system.com/BlogPost/l_4370_StockFood-00365789cut.jpg);
+	/*
+	-webkit-filter: blur(2px);
+	*/
+}
+#my-work .background-box-2 {
+	background-color: #FF7300;
+	opacity: 0.8;
+}
+
+#my-work .background-box {
+
+}
+
+#the-tools {
+}
+#the-tools h3 + h3 {
+	border-color: #005EFF;
+}
+
+@media(min-width: 0) and (max-width: 450px) {
+	header h1 {
+		font-size: 45px;
+	}
+}

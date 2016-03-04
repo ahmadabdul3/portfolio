@@ -1,0 +1,108 @@
+
+
+/*
+  requires jquery
+*/
+
+.input-box {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  background-color: white;
+  height: 25px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: box-shadow 0.15s linear, border-color 0.15s linear;
+
+}
+.input-box:hover {
+  border-color: #B3DCFF;
+  box-shadow: 0 0 4px 0px #B3DCFF;
+  transition: box-shadow 0.15s linear, border-color 0.15s linear;
+}
+.input-box.focused  {
+  border-color: #4DAFFF;
+  box-shadow: 0 0 4px 0px #4DAFFF;
+  transition: box-shadow 0.15s linear, border-color 0.15s linear;
+}
+.search-icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-top: 2px;
+}
+input {
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  height: 100%;
+}
+.search-input {
+  margin-left: 3px;
+  margin-top: -1px;
+}
+.search-icon-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 3px;
+  width: 10px;
+  height: 20px;
+  -webkit-transform: rotate(315deg);
+}
+.search-icon-box:hover {
+  cursor: pointer;
+}
+.search-icon-box:hover .glass {
+  border-color: black;
+  transition: border-color 0.3s ease;
+}
+.search-icon-box:hover .handle {
+  background-color: black;
+  transition: background-color 0.3s ease;
+}
+.search-icon-box .glass {
+  width: 100%;
+  height: 50%;
+  margin-left: -1px;
+  border-radius: 100%;
+  border: 1px solid gray;
+  transition: border-color 0.3s ease;
+}
+.search-icon-box .handle {
+  width: 2px;
+  height: 35%;
+  background-color: gray;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+@media(min-width: 0) and (max-width: 500px) {
+  input {
+    width: 100px;
+  }
+}
+/*
+
+example html usage {
+  <div class='input-box'>
+    <div class='search-icon'>
+      <div class="search-icon-box">
+        <div class="glass"></div>
+        <div class='handle'></div>
+      </div>
+    </div>
+    <input type='text' class='search-input'/>
+  </div>
+
+
+}
+
+
+
+*/
+
+
+
+

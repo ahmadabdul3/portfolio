@@ -1,0 +1,18 @@
+div.label-box-container {
+}
+div.label-box-container div.label-box {
+	display: inline-block;
+}
+
+div.label-box label {
+	margin: 2px 0;
+	display: inline-block;
+	padding: 20px 40px;
+	border-radius: 2px;
+	background-color: tomato;
+	color: white;
+}
+
+@media(min-width: 0) and (max-width: 700px) {
+	
+}

@@ -1,0 +1,95 @@
+ul.info-box-list {
+	list-style: none;
+	text-align: center;
+}
+ul.info-box-list li.info-box {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	margin: 10px;
+	background-color: white;
+	border-radius: 3px;
+	
+	border-color: #ddd;
+	border-right-color: #ccc;
+	border-bottom-color: #ccc;
+}
+ul.info-box-list li.info-box.dynamic {
+	width: auto;
+}
+ul.info-box-list li.info-box.bordered {
+	border-style: solid;
+	border-width: 1px;
+}
+ul.info-box-list li.info-box.sm {
+	width: 180px;
+}
+ul.info-box-list li.info-box.lg {
+	width: 450px;
+}
+ul.info-box-list li.info-box .content {
+	overflow: visible;
+}
+
+ul.info-box-list li.info-box header {
+	padding: 20px 0 10px 0;
+	text-align: left;
+	
+	color: black;
+}
+ul.info-box-list li.info-box header.bordered {
+	border-bottom: 1px solid #ddd;
+}
+ul.info-box-list li.info-box header h4 {
+	margin: 0 0 2px 0;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: bold;
+}
+ul.info-box-list li.info-box header h5 {
+	margin: 2px 0 0 0;
+	font-size: 18px;
+	line-height: 18px;
+	font-style: italic;
+}
+ul.info-box-list li.info-box article {
+	padding: 10px 0;
+	text-align: left;
+	
+}
+ul.info-box-list li.info-box article p {
+	font-size: 18px;
+	margin: 10px 0;
+	
+}
+ul.info-box-list li.info-box article.bordered {
+	border-bottom: 1px solid #ddd;
+}
+
+ul.info-box-list li.info-box footer {
+	padding: 10px 0;
+	text-align: left;
+	
+}
+@media (min-width: 451px) and (max-width: 700px) {
+	ul.info-box-list li {
+		margin: 5px;
+	}
+	ul.info-box-list li.info-box {
+		width: 40%;
+	}
+	ul.info-box-list li.info-box.dynamic {
+		width: 90%;
+	}
+	ul.info-box-list li.info-box.sm {
+		width: 31%;
+	}
+	ul.info-box-list li.info-box.lg {
+		width: 90%;
+	}
+}
+@media (min-width: 0) and (max-width: 450px) {
+	ul.info-box-list li.info-box, ul.info-box-list li.info-box.sm, ul.info-box-list li.info-box.lg, ul.info-box-list li.info-box.dynamic {
+		width: 90%;
+	}
+}

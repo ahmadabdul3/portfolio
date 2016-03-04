@@ -1,0 +1,101 @@
+ul.demo-box-list {
+
+    text-align: center;
+
+    li {
+
+        display: inline-block;
+        vertical-align: top;
+
+        .demo-box {
+            
+            display: inline-block;
+            margin: 10px;
+            border-radius: 10px;
+            min-width: 250px;
+            max-width: 280px;
+            background-color: $lightest-gray;
+            border: 1px solid #eee;
+
+
+            header {
+              
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                text-align: center;
+                border-bottom: 1px solid #eee;
+                padding: 10px 10px;
+                background-color: #eee;
+                
+                h4 {
+                    color: black;
+                }
+            }
+
+            .demo-area {
+                
+                padding: 20px 10px;
+                text-align: center;
+
+                .demo {
+                    display: inline-block;
+                }
+            }
+
+        }
+        .demo-box:hover {
+            cursor: default;
+        }
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 450px) {
+    ul.demo-box-list {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+
+        li {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+
+            .demo-box {
+                width: 95%;
+
+                header {
+                    padding: 10px 0;
+                }
+                .demo-area {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+/*
+
+html {
+    
+<div class='demo-box'>
+    <header>
+        <h3>
+            title
+        </h3>
+    </header>
+    <div class='demo-area'>
+        <div class='demo'>
+
+        </div>
+    </div>
+</div>
+
+}
+
+*/
+
+
+

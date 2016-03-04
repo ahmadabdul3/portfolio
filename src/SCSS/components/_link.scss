@@ -1,0 +1,42 @@
+
+.animated-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $light-blue;
+    position: relative;
+    transition: color 0.2s linear;
+
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .arrow {
+        position: absolute;
+        bottom: 0;
+        right: -15px;
+        transition: right 0.2s linear;
+    }
+
+}
+.animated-link:hover {
+
+    color: $blue;
+    transition: color 0.2s linear;
+
+    .arrow {
+        right: -25px;
+        transition: right 0.2s linear;
+    }
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: $light-blue;
+    transition: color 0.2s linear;
+}
+.link:hover {
+    color: $blue;
+    transition: color 0.2s linear;
+}
